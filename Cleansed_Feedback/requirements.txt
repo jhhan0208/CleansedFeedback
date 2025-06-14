@@ -1,0 +1,9 @@
+Flask
+pandas
+google-play-scraper
+kiwipiepy
+transformers
+openai
+tqdm
+numpy
+openpyxl

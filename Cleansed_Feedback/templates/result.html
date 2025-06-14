@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>댓글 정제 결과</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+        }
+        h2 {
+            text-align: center;
+        }
+        .info {
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            text-align: center;
+        }
+        .info img {
+            margin-top: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .info p {
+            margin: 8px 0;
+            font-size: 1rem;
+        }
+        .home-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .home-link:hover {
+            background-color: #45a049;
+        }
+        .review-card {
+            max-width: 700px;
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .review-meta {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        hr {
+            margin: 40px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>댓글 수집 결과</h2>
+
+    <div class="info">
+        <p><strong>웹툰 이름:</strong> {{ app_title }}</p>
+        <p><strong>에피소드 이름:</strong> {{ episode_title }}</p>
+        <img src="{{ app_icon }}" alt="앱 아이콘" width="96" height="124.6">
+        <p><strong>총 리뷰 수집:</strong> {{ review_count }}</p>
+        <a class="home-link" href="/">홈으로 돌아가기</a>
+    </div>
+
+    <hr>
+
+    {% for review in grouped_reviews %}
+        <div class="review-card">
+            <div class="review-meta">{{ review.userName }} / {{ review.at }}</div> <!-- ★{{ review.score }} -->
+            <ul>
+                {% for seg in review.segments %}
+                    {{ seg }} <!-- <li>{{ seg }}</li> -->
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+
+</body>
+</html>
