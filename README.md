@@ -32,10 +32,10 @@
 
 # 🔎 모델 성능 평가
 
-비난 분류에는 기존 KcELECTRA 기반 Fine-tuned model 'beomi/korean-hatespeech-classifier'을 사용하였으며,
+비난 분류에는 기존 KcELECTRA 기반 Fine-tuned model 'beomi/korean-hatespeech-classifier'을 사용하였으며,<br>
 https://huggingface.co/beomi/korean-hatespeech-classifier
 
-피드백 분류에는 네이버 웹툰에 대해 피드백 여부를 LLM으로 라벨링한 dataset로 KcELECTRA 모델을 직접 Fine-tuning한 모델 'jhhan0208/feedback-classification-kcelectra-v1'을 사용하였습니다.
+피드백 분류에는 네이버 웹툰에 대해 피드백 여부를 LLM으로 라벨링한 dataset로 KcELECTRA 모델을 직접 Fine-tuning한 모델 'jhhan0208/feedback-classification-kcelectra-v1'을 사용하였습니다.<br>
 https://huggingface.co/jhhan0208/feedback-classification-kcelectra-v1
 
 ### 1️⃣ LLM 라벨링 성능 평가<br>
