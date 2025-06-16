@@ -1,3 +1,4 @@
+
 # CleansedFeedback
 ![1_Logo](https://github.com/user-attachments/assets/12c328cf-6669-4b9a-8a67-51cfed81faef)
 2025-1학기 소프트웨어융합 캡스톤 디자인으로 진행했던 순화된 피드백 제공 서비스, "CleansedFeedback"입니다.
@@ -54,7 +55,8 @@ https://huggingface.co/jhhan0208/feedback-classification-kcelectra-v1
 <img src="https://github.com/user-attachments/assets/8e5e71ee-5a77-4032-a992-11c94f8a6401" width="300"/>
 
 # 🎥 데모 영상
-https://github.com/user-attachments/assets/eba315b7-922c-4ab7-991e-6c2619d0e461
+
+https://github.com/user-attachments/assets/c94f1f05-46bf-4819-966e-d2c0ccca5161
 
 # ✔️ 결론
 ![6_결론](https://github.com/user-attachments/assets/a447a849-086b-4e82-bda2-7bda13cf63da)<br>
