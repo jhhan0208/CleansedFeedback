@@ -29,7 +29,7 @@
 </b>
 
 # ⚙️ 서비스 아키텍처
-![4_아키텍처](https://github.com/user-attachments/assets/4e4520aa-d95f-4b32-982c-af202015ccbb)
+![그림5](https://github.com/user-attachments/assets/f2702f0e-9882-4f40-a965-2073b23bd67e)
 
 # 🔎 모델 성능 평가
 
